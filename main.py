@@ -20,7 +20,7 @@ def move1(angle):
 
 @app.route('/move2/<int:angle>')
 def move2(angle):  
-  kit.servo[2].angle = angle
+  kit.servo[4].angle = angle
 #   kit.continuous_servo[1].throttle = 1
   return "{{'Angle':{}}}".format(angle)
 
