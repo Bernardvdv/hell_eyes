@@ -13,7 +13,7 @@ def index():
     return render_template('index.html') #you can customze index.html here
 
 @app.route('/move/<int:angle>')
-def move(angel):  
+def move(angle):  
   kit.servo[0].angle = angel
   return "{{'Angle':{}}}".format(angle)
 
