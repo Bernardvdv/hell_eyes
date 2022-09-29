@@ -12,7 +12,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html') #you can customze index.html here
 
-@app.route('/move/<int:angle>')
+@app.route('/move1/<int:angle>')
 def move1(angle):  
   kit.servo[1].angle = angle
 #   kit.continuous_servo[1].throttle = 1
