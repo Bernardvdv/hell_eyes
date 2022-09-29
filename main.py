@@ -16,3 +16,8 @@ def index():
 def move(angel):  
   kit.servo[0].angle = angel
   return "{{'Angle':{}}}".format(angle)
+
+
+if __name__ == '__main__':
+
+    app.run(host='0.0.0.0', debug=False)
