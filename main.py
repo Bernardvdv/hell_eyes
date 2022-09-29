@@ -1,6 +1,18 @@
 from adafruit_servokit import ServoKit
 
+from flask import Flask, render_template, Response, request
+
 
 kit = ServoKit(channels=16)
 
-kit.servo[0].angle = 180
+# App Globals (do not edit)
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html') #you can customze index.html here
+
+@app.route('/move/<int:angle>')
+def move(angel):  
+  kit.servo[0].angle = angel
+  return "{{'Angle':{}}}".format(angle)
