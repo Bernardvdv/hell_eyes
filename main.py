@@ -14,7 +14,7 @@ def index():
 
 @app.route('/move/<int:angle>')
 def move(angle):  
-  kit.servo[0].angle = angel
+  kit.servo[0].angle = angle
   return "{{'Angle':{}}}".format(angle)
 
 
