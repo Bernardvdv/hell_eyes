@@ -15,6 +15,7 @@ def index():
 @app.route('/move/<int:angle>')
 def move(angle):  
   kit.servo[0].angle = angle
+  kit.continuous_servo[1].throttle = 1
   return "{{'Angle':{}}}".format(angle)
 
 
