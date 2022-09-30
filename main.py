@@ -46,7 +46,7 @@ def move2(angle):
 @app.route("/move3")
 async def move3():
     data = await move1(1)
-    return jsonify(data)
+    return "Yah"
 
 
 if __name__ == '__main__':
