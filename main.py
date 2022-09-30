@@ -19,7 +19,7 @@ def move1(angle):
     for ang in range(90):
 #         time.sleep(1)
         print(ang)
-        kit.servo[1].angle = ang
+        kit.servo[1].angle = ang + 10
         #   kit.continuous_servo[1].throttle = 1
     moveback(ang)
     return "{{'Angle':{}}}".format(angle)
@@ -28,9 +28,9 @@ def move1(angle):
 def moveback(angle):
     angle + 90
     for ang in range(90):
-        time.sleep(1)
+#         time.sleep(1)
         print(ang)
-        kit.servo[1].angle = ang
+        kit.servo[1].angle = ang + 10
         #   kit.continuous_servo[1].throttle = 1
     return "{{'Angle':{}}}".format(angle)
 
