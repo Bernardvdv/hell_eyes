@@ -35,10 +35,18 @@ def moveback(angle):
     return "{{'Angle':{}}}".format(angle)
 
 @app.route('/move2/<int:angle>')
-def move2(angle):  
-  kit.servo[4].angle = angle
-#   kit.continuous_servo[1].throttle = 1
-  return "{{'Angle':{}}}".format(angle)
+def move2(angle):
+    for ang in range(90):
+        time.sleep(1)
+        print(ang)
+    kit.servo[5].angle = angle
+    #   kit.continuous_servo[1].throttle = 1
+    return "{{'Angle':{}}}".format(angle)
+
+@app.route("/move3")
+async def move3():
+    data = await move1(1)
+    return jsonify(data)
 
 
 if __name__ == '__main__':
