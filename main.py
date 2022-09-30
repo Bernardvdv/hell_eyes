@@ -21,7 +21,7 @@ def move1(angle):
         print(ang)
         kit.servo[1].angle = ang
         #   kit.continuous_servo[1].throttle = 1
-    move2(ang)
+    moveback(ang)
     return "{{'Angle':{}}}".format(angle)
 
 @app.route('/moveback/<int:angle>')
