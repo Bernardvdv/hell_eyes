@@ -48,35 +48,35 @@ async def move3():
     data = await move1(1)
     return "{{'Angle':{}}}".format(1)
 
-@app.route('/move4/<int:ping>')
-def move4(ping):
+@app.route('/move4/<int:servo>/<int:ping>')
+def move4(servo, ping):
 #     for ang in range(90):
 #         time.sleep(1)
 #         print(ang)
-    kit.servo[ping].angle = 0
+    kit.servo[servo].angle = 0
     time.sleep(ping)
-    kit.servo[ping].angle = 20
+    kit.servo[servo].angle = 20
     time.sleep(ping)
-    kit.servo[ping].angle = 40
+    kit.servo[servo].angle = 40
     time.sleep(ping)
-    kit.servo[ping].angle = 60 
+    kit.servo[servo].angle = 60 
     time.sleep(ping)
-    kit.servo[ping].angle = 80
+    kit.servo[servo].angle = 80
     time.sleep(ping)
-    kit.servo[ping].angle = 60
+    kit.servo[servo].angle = 60
     time.sleep(ping)
-    kit.servo[ping].angle = 40 
+    kit.servo[servo].angle = 40 
     time.sleep(ping)
-    kit.servo[ping].angle = 20 
+    kit.servo[servo].angle = 20 
     time.sleep(ping)
-    kit.servo[ping].angle = 0
-    kit.servo[ping].angle = 20
+    kit.servo[servo].angle = 0
+    kit.servo[servo].angle = 20
     time.sleep(ping)
-    kit.servo[ping].angle = 40
+    kit.servo[servo].angle = 40
     time.sleep(ping)
-    kit.servo[ping].angle = 60 
+    kit.servo[servo].angle = 60 
     time.sleep(ping)
-    kit.servo[ping].angle = 80
+    kit.servo[servo].angle = 80
     
     
     #   kit.continuous_servo[1].throttle = 1
