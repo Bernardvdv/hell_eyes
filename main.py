@@ -54,28 +54,28 @@ def move4(servo, ping):
 #         time.sleep(1)
 #         print(ang)
     kit.servo[servo].angle = 0
-    time.sleep(ping)
+#     time.sleep(ping)
     kit.servo[servo].angle = 20
     time.sleep(ping)
     kit.servo[servo].angle = 40
-    time.sleep(ping)
+#     time.sleep(ping)
     kit.servo[servo].angle = 60 
     time.sleep(ping)
     kit.servo[servo].angle = 80
-    time.sleep(ping)
+#     time.sleep(ping)
     kit.servo[servo].angle = 60
     time.sleep(ping)
     kit.servo[servo].angle = 40 
-    time.sleep(ping)
+#     time.sleep(ping)
     kit.servo[servo].angle = 20 
     time.sleep(ping)
     kit.servo[servo].angle = 0
     kit.servo[servo].angle = 20
-    time.sleep(ping)
+#     time.sleep(ping)
     kit.servo[servo].angle = 40
     time.sleep(ping)
     kit.servo[servo].angle = 60 
-    time.sleep(ping)
+#     time.sleep(ping)
     kit.servo[servo].angle = 80
     
     
