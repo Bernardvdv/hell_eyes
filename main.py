@@ -17,7 +17,7 @@ def index():
 @app.route('/move1/<int:angle>')
 def move1(angle):
     for ang in range(90):
-        time.sleep(1)
+#         time.sleep(1)
         print(ang)
         kit.servo[1].angle = ang
         #   kit.continuous_servo[1].throttle = 1
