@@ -13,10 +13,11 @@ def index():
     return render_template('index.html') #you can customze index.html here
 
 @app.route('/move1/<int:angle>')
-def move1(angle):  
-  kit.servo[1].angle = angle
-#   kit.continuous_servo[1].throttle = 1
-  return "{{'Angle':{}}}".format(angle)
+def move1(angle):
+    for ang in range(90):
+        kit.servo[ang].angle = angle
+        #   kit.continuous_servo[1].throttle = 1
+        return "{{'Angle':{}}}".format(angle)
 
 @app.route('/move2/<int:angle>')
 def move2(angle):  
