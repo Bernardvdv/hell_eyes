@@ -48,7 +48,7 @@ async def move3():
     data = await move1(1)
     return "{{'Angle':{}}}".format(1)
 
-@app.route('/move4/<int:angle>')
+@app.route('/move4/<int:ping>')
 def move4(ping):
 #     for ang in range(90):
 #         time.sleep(1)
