@@ -70,6 +70,13 @@ def move4(ping):
     kit.servo[ping].angle = 20 
     time.sleep(ping)
     kit.servo[ping].angle = 0
+    kit.servo[ping].angle = 20
+    time.sleep(ping)
+    kit.servo[ping].angle = 40
+    time.sleep(ping)
+    kit.servo[ping].angle = 60 
+    time.sleep(ping)
+    kit.servo[ping].angle = 80
     
     
     #   kit.continuous_servo[1].throttle = 1
