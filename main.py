@@ -1,3 +1,5 @@
+import time 
+
 from adafruit_servokit import ServoKit
 
 from flask import Flask, render_template, Response, request
@@ -15,6 +17,7 @@ def index():
 @app.route('/move1/<int:angle>')
 def move1(angle):
     for ang in range(90):
+        time.sleep(1)
         kit.servo[1].angle = ang
         #   kit.continuous_servo[1].throttle = 1
         return "{{'Angle':{}}}".format(angle)
