@@ -50,9 +50,7 @@ async def move3():
 
 @app.route('/move4/<int:servo>/<int:ping>')
 def move4(servo, ping):
-#     for ang in range(90):
-#         time.sleep(1)
-#         print(ang)
+    ping = 0.015
     kit.servo[servo].angle = 0
 #     time.sleep(ping)
     kit.servo[servo].angle = 20
