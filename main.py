@@ -83,11 +83,13 @@ def move4(servo, ping):
     
 @app.route('/move5/<int:servo>')
 def move5(servo):
-    ping = 0.5
+    ping = 0.1
     
     for i in range(180):
-        kit.servo[servo].angle = i + 10
         time.sleep(ping)
+        angle = i + 10
+        kit.servo[servo].angle = angle
+        
     
     
     #   kit.continuous_servo[1].throttle = 1
