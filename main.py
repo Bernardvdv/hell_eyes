@@ -83,7 +83,7 @@ def move4(servo, ping):
     
 @app.route('/move5/<int:servo>')
 def move5(servo):
-    ping = 0.1
+    ping = 0.05
     
     for i in range(170):
         time.sleep(ping)
