@@ -89,7 +89,7 @@ def move5(servo1, servo2):
         time.sleep(ping)
         angle = i + 10
         kit.servo[servo1].angle = angle
-        kit.servo[servo2].angle = angle
+#         kit.servo[servo2].angle = angle
         
     
     
