@@ -81,14 +81,15 @@ def move4(servo, ping):
 #     time.sleep(ping)
     kit.servo[servo].angle = 80
     
-@app.route('/move5/<int:servo>')
-def move5(servo):
+@app.route('/move5/<int:servo1>/<int:servo2>')
+def move5(servo1, servo2):
     ping = 0.05
     
     for i in range(170):
         time.sleep(ping)
         angle = i + 10
-        kit.servo[servo].angle = angle
+        kit.servo[servo1].angle = angle
+        kit.servo[servo2].angle = angle
         
     
     
