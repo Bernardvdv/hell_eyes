@@ -85,7 +85,7 @@ def move4(servo, ping):
 def move5(servo):
     ping = 0.1
     
-    for i in range(180):
+    for i in range(170):
         time.sleep(ping)
         angle = i + 10
         kit.servo[servo].angle = angle
